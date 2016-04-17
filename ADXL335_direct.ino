@@ -10,11 +10,11 @@
  http://www.arduino.cc/en/Tutorial/ADXL3xx
 
  The circuit:
- analog 0: vcc
- analog 1: x-axis
+ analog 0: ground
+ analog 1: z-axis
  analog 2: y-axis
- analog 3: z-axis
- analog 4: ground
+ analog 3: x-axis
+ analog 4: vcc
 
  created 2 Jul 2008
  by David A. Mellis
@@ -27,7 +27,7 @@
 
 // these constants describe the pins. They won't change:
 const int groundpin = 14;             // A0 -- GND
-const int powerpin = 1;               // A4 -- VCC
+const int powerpin = 18;               // A4 -- VCC
 const int xpin = A3;                  // x-axis of the accelerometer
 const int ypin = A2;                  // y-axis
 const int zpin = A1;                  // z-axis
