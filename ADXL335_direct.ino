@@ -26,15 +26,15 @@
 */
 
 // these constants describe the pins. They won't change:
-const int groundpin = 18;             // analog input pin 4 -- ground
-const int powerpin = 14;              // analog input pin 0 -- voltage
-const int xpin = A1;                  // x-axis of the accelerometer
+const int groundpin = 14;             // A0 -- GND
+const int powerpin = 1;               // A4 -- VCC
+const int xpin = A3;                  // x-axis of the accelerometer
 const int ypin = A2;                  // y-axis
-const int zpin = A3;                  // z-axis
+const int zpin = A1;                  // z-axis
 
 void setup() {
   // initialize the serial communications:
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   // Provide ground and power by using the analog inputs as normal
   // digital pins.  This makes it possible to directly connect the
